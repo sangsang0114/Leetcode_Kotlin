@@ -1,4 +1,4 @@
-private class Solution {
+private class Two_Sum {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         val m : MutableMap<Int, Int> = mutableMapOf()
 
