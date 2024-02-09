@@ -1,24 +1,22 @@
-import java.util.*
-
 class MyQueue() {
-    val input: Deque<Int> = ArrayDeque()
-    val output = ArrayDeque<Int>()
+    private val input = ArrayDeque<Int>()
+    private val output = ArrayDeque<Int>()
     fun push(x: Int) {
-        input.push(x)
+        input.addLast(x)
     }
 
     fun pop(): Int {
         this.peek()
-        return output.pop()
+        return output.removeFirst()
     }
 
     fun peek(): Int {
         if (output.isEmpty()) {
             while (!input.isEmpty()) {
-                output.push(input.pop())
+                output.addLast(input.removeFirst())
             }
         }
-        return output.peek()
+        return output.first()
     }
 
     fun empty(): Boolean {
