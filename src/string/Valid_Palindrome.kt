@@ -1,4 +1,4 @@
-import java.util.*
+package string
 
 private class Valid_Palindrome {
     fun isPalindrome(s: String): Boolean {

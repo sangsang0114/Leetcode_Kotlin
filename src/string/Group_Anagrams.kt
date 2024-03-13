@@ -1,3 +1,5 @@
+package string
+
 class Group_Anagrams {
     fun groupAnagrams(strs: Array<String>): List<List<String>> {
         val anagrams = mutableMapOf<String, MutableList<String>>()
