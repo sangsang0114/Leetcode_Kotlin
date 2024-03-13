@@ -1,3 +1,5 @@
+package array
+
 import kotlin.math.max
 
 class Trapping_Rain_Water {
