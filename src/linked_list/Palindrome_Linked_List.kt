@@ -1,6 +1,5 @@
 package linked_list
 
-import ListNode
 import java.util.*
 
 fun isPalindrome(head: ListNode?): Boolean {
