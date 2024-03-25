@@ -1,3 +1,5 @@
+package hash
+
 fun numJewelsInStones(jewels: String, stones: String): Int {
     var count = 0
     val freqs: MutableSet<Char> = HashSet()
